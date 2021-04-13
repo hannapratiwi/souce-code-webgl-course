@@ -27,7 +27,7 @@
       </div>
    </body>
 
-      <script type="text/javascript" src="geometry.js">
+      <script type="text/javascript" src="geometry.js"> 
      /*============= Creating a canvas ======================*/
       var canvas = document.getElementById('my_Canvas');
       gl = canvas.getContext('experimental-webgl');
