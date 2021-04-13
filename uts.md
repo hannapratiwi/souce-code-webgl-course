@@ -28,6 +28,7 @@
    </body>
 
       <script type="text/javascript" src="geometry.js">
+      
         /*============= Creating a canvas ======================*/
 var canvas = document.getElementById('my_Canvas');
 gl = canvas.getContext('experimental-webgl');
@@ -78,6 +79,7 @@ gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(colors), gl.STATIC_DRAW);
 var index_buffer = gl.createBuffer();
 gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, index_buffer);
 gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW);
+
       </script> 
       
       <script type="text/javascript" src="shader.js">
@@ -129,6 +131,7 @@ gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW)
          gl.enableVertexAttribArray(_color);
          gl.useProgram(shaderprogram);
       </script>
+      
       <script type="text/javascript" src="scaling.js">
          function showValue(){
             var ukuran = document.getElementById("size").value;
@@ -318,7 +321,7 @@ gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW)
       }
       </script>
       
-      <script type="text/javascript">
+      <script type="text/javascript" src="rotation.js">
         /*=========================rotation================*/
          function rotateX(m, angle) {
             var c = Math.cos(angle);
